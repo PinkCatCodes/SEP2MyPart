@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onDragDetected="#onReset" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.login.LoginViewController">
+    <children>
+        <Label layoutX="229.0" layoutY="71.0" text="Log in ">
+            <font>
+                <Font name="Arial" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="108.0" layoutY="164.0" text="User name">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="username" layoutX="213.0" layoutY="159.0" onAction="#onEnter" prefHeight="31.0" prefWidth="216.0" />
+        <Label layoutX="113.0" layoutY="215.0" text="Password">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="password" layoutX="213.0" layoutY="210.0" onAction="#onEnter" prefHeight="31.0" prefWidth="216.0" />
+        <Button layoutX="178.0" layoutY="288.0" mnemonicParsing="false" onAction="#onLogin" text="Log in" />
+        <Button layoutX="288.0" layoutY="288.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+      <Button layoutX="401.0" layoutY="288.0" mnemonicParsing="false" onAction="#onReset" text="Reset" />
+        <Label layoutX="198.0" layoutY="380.0" text="Not a member yet?" textFill="#532bcc" />
+        <Button fx:id="Signup" layoutX="358.0" layoutY="375.0" mnemonicParsing="false" onAction="#onSignupButton" style="-fx-background-color: transparent;" text="Sign up" textFill="#532bcc" underline="true" />
+    </children>
+</AnchorPane>
