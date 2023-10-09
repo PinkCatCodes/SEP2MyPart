@@ -24,6 +24,9 @@ public class UserModelManager implements User
 
     }
 
+    public void createButton(){
+        System.out.println("button");
+    }
 
     public void createAccount(String username, String password, String email) throws NotBoundException, RemoteException {
         SimpleUser user = new SimpleUser(username, password, email);
