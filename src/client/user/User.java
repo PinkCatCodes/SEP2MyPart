@@ -9,5 +9,6 @@ public interface User {
             throws RemoteException, NotBoundException;
 
     boolean userLogin(String username, String password);
+    boolean userLogin(int username, String password);
 
 }
